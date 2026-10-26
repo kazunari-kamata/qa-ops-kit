@@ -13,3 +13,7 @@ def test_invalid_phase() -> None:
 def test_templates() -> None:
     result = run("scripts/validate_templates.py", "templates")
     assert result.returncode == 0 and "validated" in result.stdout
+
+def test_test_level_templates_exist() -> None:
+    for name in ("unit-test-plan.md", "integration-test-plan.md", "system-test-plan.md", "acceptance-test-plan.md"):
+        assert (ROOT / "templates" / name).is_file()
