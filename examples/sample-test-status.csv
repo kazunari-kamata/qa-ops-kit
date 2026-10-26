@@ -1,0 +1,4 @@
+case_id,priority,status,defect_id,note
+TC-001,High,Pass,,主要な業務フローを確認済み
+TC-002,High,Fail,DEF-001,修正後に再実行する
+TC-003,Medium,Blocked,,テストデータの準備を待つ
